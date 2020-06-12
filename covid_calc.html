@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Albertoibm.GitHub.io : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Calculadora de probabilidad estimada de muerte ante CoVid19</title>
+    <script>
+function rise(x){ x.style.top = "0px";}
+function unrise(x){ x.style.top = "-10px";}
+    </script>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/albertoibm" onmouseover="rise(this)" onmouseout="unrise(this)">View on GitHub</a>
+
+          <h1 id="project_title">CoVid19</h1>
+          <h2 id="project_tagline">Calculadora de probabilidad estimada de muerte</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+<div style="float:right;width:30%">
+	<p>
+	</p>
+	<h3>
+		<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Probabilidad
+	</h3>
+	<p>
+	<ul>
+	  <li><p id="proba">0%</p></li>
+	</ul>
+	</p>
+</div>
+<h3>
+	<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Calculadora
+</h3>
+
+<p>
+  <label for="rs">Selecciona tu edad:</label>
+  <select id="edad" name="edad">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option>
+    <option value="32">32</option>
+    <option value="33">33</option>
+    <option value="34">34</option>
+    <option value="35">35</option>
+    <option value="36">36</option>
+    <option value="37">37</option>
+    <option value="38">38</option>
+    <option value="39">39</option>
+    <option value="40">40</option>
+    <option value="41">41</option>
+    <option value="42">42</option>
+    <option value="43">43</option>
+    <option value="44">44</option>
+    <option value="45">45</option>
+    <option value="46">46</option>
+    <option value="47">47</option>
+    <option value="48">48</option>
+    <option value="49">49</option>
+    <option value="50">50</option>
+    <option value="51">51</option>
+    <option value="52">52</option>
+    <option value="53">53</option>
+    <option value="54">54</option>
+    <option value="55">55</option>
+    <option value="56">56</option>
+    <option value="57">57</option>
+    <option value="58">58</option>
+    <option value="59">59</option>
+    <option value="60">60</option>
+    <option value="61">61</option>
+    <option value="62">62</option>
+    <option value="63">63</option>
+    <option value="64">64</option>
+    <option value="65">65</option>
+    <option value="66">66</option>
+    <option value="67">67</option>
+    <option value="68">68</option>
+    <option value="69">69</option>
+    <option value="70">70</option>
+    <option value="71">71</option>
+    <option value="72">72</option>
+    <option value="73">73</option>
+    <option value="74">74</option>
+    <option value="75">75</option>
+    <option value="76">76</option>
+    <option value="77">77</option>
+    <option value="78">78</option>
+    <option value="79">79</option>
+    <option value="80">80</option>
+    <option value="81">81</option>
+    <option value="82">82</option>
+    <option value="83">83</option>
+    <option value="84">84</option>
+    <option value="85">85</option>
+    <option value="86">86</option>
+    <option value="87">87</option>
+    <option value="88">88</option>
+    <option value="89">89</option>
+    <option value="90">90</option>
+    <option value="91">91</option>
+    <option value="92">92</option>
+    <option value="93">93</option>
+    <option value="94">94</option>
+    <option value="95">95</option>
+    <option value="96">96</option>
+    <option value="97">97</option>
+    <option value="98">98</option>
+    <option value="99">99</option>
+  </select>
+
+  <p>Sexo:</p>
+  <input type="radio" id="hombre" name="sexo" value="hombre">
+  <label for="hombre">Hombre</label><br>
+  <input type="radio" id="mujer" name="sexo" value="mujer">
+  <label for="mujer">Mujer</label><br>
+  <p>Otras comorbilidades:</p>
+  <input type="checkbox" id="diabetes" name="diabetes" value="diabetes">
+  <label for="diabetes">Diabetes</label><br>
+  <input type="checkbox" id="EPOC" name="EPOC" value="EPOC">
+  <label for="EPOC">EPOC</label><br>
+  <input type="checkbox" id="asma" name="asma" value="asma">
+  <label for="asma">Asma</label><br>
+  <input type="checkbox" id="inmuno" name="inmuno" value="inmuno">
+  <label for="inmuno">Inmunosupresi&oacute;n</label><br>
+  <input type="checkbox" id="hipert" name="hipert" value="hipert">
+  <label for="hipert">Hipertensi&oacute;n</label><br>
+  <input type="checkbox" id="cardio" name="cardio" value="cardio">
+  <label for="cardio">Cardiovascular</label><br>
+  <input type="checkbox" id="obesidad" name="obesidad" value="obesidad">
+  <label for="obesidad">Obesidad</label><br>
+  <input type="checkbox" id="renal" name="renal" value="renal">
+  <label for="renal">Renal cr&oacute;nica</label><br>
+  <input type="checkbox" id="tabaco" name="tabaco" value="tabaco">
+  <label for="tabaco">Tabaquismo</label><br>
+  <input type="checkbox" id="otra" name="otra" value="otra">
+  <label for="otra">Otra complicaci&oacute;n</label><br>
+  
+  <button onclick="calcular()">Calcular</button>
+
+<p id="demo"></p>
+
+<script>
+function calcular() {
+  var text = document.getElementById("proba");
+  var edad, sexo, diab, epoc, asma, inmu, hipe, card, obes, rena, taba, otra;
+  var edad = (document.getElementById("edad").value - 46.60585729499) / 16.07280097938;
+  var hombre = document.getElementById("hombre").checked;
+  var mujer = document.getElementById("mujer").checked;
+
+
+
+
+  if (!hombre && !mujer){
+	  // sexo sin seleccionar
+	  text.innerHTML = "<strong style='color:red;'>Por favor elige Masculino o Femenino</strong>";
+	  return;
+  }
+  if (hombre && !mujer){
+    sexo = 0.88099795;
+  } else{
+    sexo = -1.13507642;
+  }
+  var checkBox = document.getElementById("diabetes");
+  if (checkBox.checked == true){
+     diab = 2.15977418;
+  } else {
+     diab = -0.46301137;
+  }
+  var checkBox = document.getElementById("EPOC");
+  if (checkBox.checked == true){
+     epoc = 7.02924378;
+  } else {
+     epoc = -0.14226281;
+  }
+  var checkBox = document.getElementById("asma");
+  if (checkBox.checked == true){
+     asma = 5.83862144;
+  } else {
+     asma = -0.17127331;
+  }
+  var checkBox = document.getElementById("inmuno");
+  if (checkBox.checked == true){
+     inmu = 8.01424364;
+  } else {
+     inmu = -0.12477784;
+  }
+  var checkBox = document.getElementById("hipert");
+  if (checkBox.checked == true){
+     hipe = 1.92779325;
+  } else {
+     hipe = -0.51872782;
+  }
+  var checkBox = document.getElementById("otra");
+  if (checkBox.checked == true){
+     otra = 5.50440265;
+  } else {
+     otra = -0.18167276;
+  }
+  var checkBox = document.getElementById("cardio");
+  if (checkBox.checked == true){
+     card = 6.10298834;
+  } else {
+     card = -0.16385416;
+  }
+  var checkBox = document.getElementById("obesidad");
+  if (checkBox.checked == true){
+     obes = 1.96766395;
+  } else {
+     obes = -0.50821686;
+  }
+  var checkBox = document.getElementById("renal");
+  if (checkBox.checked == true){
+     rena = 6.40652613;
+  } else {
+     rena = -0.15609083;
+  }
+  var checkBox = document.getElementById("tabaco");
+  if (checkBox.checked == true){
+     taba = 3.35176292;
+  } else {
+     taba = -0.29835046;
+  }
+  var otro = -0.67274632;
+
+  var z = -2.36727084 + sexo * 0.25622336 + edad * 0.9837722 + diab * 0.18759876 + epoc * 0.02327441 + asma * -0.02342623 + inmu * 0.04982622 + hipe * 0.09547078 + otra * 0.03706 + card * -0.00738306 + obes * 0.15058704 + rena * 0.11931988 + taba * -0.00435704 + otro * -0.52840053;
+  var proba = 100 / (1 + Math.exp(-z));
+  text.innerHTML = proba.toFixed(2) + "%";
+}
+</script>
+</p>
+<!--
+<p>
+My CV in <a href="cv_albertobarquin.pdf">PDF</a>.
+</p>
+<div >
+</div>
+<h3>
+	<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Education
+</h3>
+<h4>
+M.Sc. in Space Science and Technology
+</h4>
+<p><strong> Université Paul Sabatier Toulouse III</strong> (France, 2015-2016)</p>
+<p><strong> Luleå Tekniska Universitet</strong> (Sweden, 2015)</p>
+<p><strong>Universität Würzburg</strong> (Germany, 2014-2015)</p>
+<h4>
+B.Sc. in Mechatronics Engineering
+</h4>
+<p><strong>National University of Mexico (UNAM)</strong> (Mexico, 2008-2012)</p>
+<p><strong>Thesis:</strong> Implementation of an external controller in a comercial quadrocopter</p>
+
+<h3>Interests</h3>
+Navigation, orbital mechanics, instrumentation, control engineering, image processing, genetic algorithms.
+<h3>
+	<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Skills</h3>
+<h4> Languages </h4>
+<dl>
+	<dt class="col13">Spanish</dt>
+	<dd class="col13">Native</dd>
+	<dt class="col23 reset">English</dt>
+	<dd class="col23">Fully proficient</dd>
+	<dt class="col33 reset">German</dt>
+	<dd class="col33">Advanced proficiency (C1)</dd>
+</dl>
+<dl>
+	<dt >Italian, French, Swedish</dt>
+	<dd class="col13">Survival proficiency</dd>
+</dl>
+<h4> Programming languages </h4>
+<p>Python, C/C++, C#, PHP, JavaScript</p>
+-->
+<h3>Metodolog&iacute;a</h3>
+
+<p>
+La calculadora está basada en los datos oficiales del coronavirus en México. El algoritmo utilizado se llama regresión logística, y es un algoritmo comunmente utilizado en las ciencias médicas para estimar la probabilidad de que un paciente tenga cierta enfermedad, clasificándolo como enfermo o no enfermo. Se utilizó un conjunto de 110953 datos, de los que el 70% (77667) fueron usados para entrenamiento, y 30% (33286) para validar que el algoritmo es capaz de generalizar. Dado que los datos tienen un resultado binario, es decir, el paciente falleció o no falleció, el algoritmo necesita un umbral de decisión para aplicar sobre la probabilidad de muerte, a partir de la cual se entiende que el paciente murió. Debido a que la separación entre los dos conjuntos no es perfecta, es decir, existen pacientes que a pesar de tener baja probabilidad de muerte, mueren, y pacientes que con una alta probabilidad de fallecer sobreviven al virus, cualquier umbral de decisión dará lugar a cierto número de falsos positivos y falsos negativos. Por default el algoritmo utiliza un umbral de decisión del 50%, sin embargo, no es necesariamente el mejor valor. A continuación se explica el análisis ROC (Característica Operativa del Receptor, por sus siglas en inglés) realizado.
+</p>
+<p>
+La llamada curva ROC es una herramienta que nos permite medir el desempeño de un algoritmo de clasificación para distintos umbrales de decisión. El umbral de decisión sirve para, a partir de una probabilidad estimada, decidir en qué clasificación se encuentra el sujeto que está siendo evaluado. Abajo podemos ver en la primera gráfica, donde aparecen las tasas de falsos positivos y negativos, que para minimizar ambas tasas, el umbral de decisión correspondiente sería del 15%. Esto quiere decir que si la calculadora le asigna al paciente una probabilidad estimada de muerte del 16%, el algoritmo predice que ese paciente morirá por la enfermedad. Este número, dado que minimiza las tasas de falsos positivos y falsos negativos, maximiza la Sensibilidad y la Especificidad. Tener alta sensibilidad significa que es bueno clasificando a los pacientes que morirán por la enfermedad. Tener alta especifidad significa que de los que predice que morirán, acierta la mayor parte del tiempo, y entre mayor es el umbral de decisión, la especificidad también aumenta. El valor de 15% nos da un valor máximo para las dos, con 75% cada una, sin embargo, dado que los datos tienen una mortalidad del 15%, la gran mayoría de pacientes se recupera, por lo que el número de pacientes con predicción de muerte es significativamente más alto del valor real.<br>
+<img src="images/fpr_fnr.png"><br>
+</p>
+<p>
+Para minimizar los números absolutos de falsos positivos y falsos negativos tenemos que observar la siguiente gráfica. Para ello se elige como umbral de decisión el punto donde se cruzan las curvas verde y roja, que corresponde al 30%. Este valor nos da una especificidad del 90%, lo que significa que los pacientes con predicción de muerte tienen una predicción significativamente más certera, sin embargo, la sensibilidad baja a un 43%, es decir, que un número significativo de los pacientes que el algoritmo predice que sobrevivirán, no lo logran en realidad. Volviendo a la primera gráfica, es importante notar que cuando la probabilidad estimada de muerte es del 40%, la especificidad llega al 95%, y para una probabilidad estimada del 60%, la especificidad alcanza el 99%, lo que significa que un paciente con predicción de muerte tiene muy pocas probabilidades de recuperarse.<br>
+<img src="images/all.png"><br>
+</p>
+<p>
+Y bueno, ¿pero el modelo clasifica correctamente? Para saber qué tan bueno es un algoritmo separando pacientes entre estas 2 clases, se mide el área bajo la curva ROC. Una curva con un área de 1 significa que el algoritmo logra una separación perfecta, sin embargo en muy pocos casos es posible esto. Al otro extremo, un algoritmo que no logra separar en absoluto a los sujetos en 2 clasificaciones tiene un area de 0.5, es decir, que la curva es una línea inclinada a 45 grados. Como puede observarse en la gráfica de abajo, la curva se encuentra bastante por encima de la línea inclinada, marcada con una línea punteada, y tiene un área bajo la curva de 0.82. De acuerdo con Hosmer y Lemeshow (Applied Logistic Regression, p. 162), un valor entre 0.8 y 0.9 sugiere una capacidad "excelente" de discriminación, por lo que podemos considerar las predicciones de nuestro modelo como buenas.<br>
+Lo que pretendo con este ejercicio es generar consciencia sobre el virus CoVid19 y el riesgo real de muerte que representa para muchas personas. Hay que tomarlo en serio y evitar lo más posible caer en el riesgo de contagiarse y contagiar a nuestros seres queridos.<br>
+<img src="images/roc.png"><br>
+
+</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70923538-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+
+  </body>
+</html>
