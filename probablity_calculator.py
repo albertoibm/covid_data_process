@@ -187,46 +187,5 @@ print(fp / (fp + tn) + fn / (fn + tp))
 print("\nSensitivity:\n{:.3f}".format(sensitivity))
 print("\nSpecificity:\n{:.3f}".format(specificity))
 
-#print("\nMean:")
-#print(_mean)
-#print("\nStandard dev:")
-#print(_std)
-
-
-# Predict me
-print("\nPredicting me:")
-me = array([1.,1.,30.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.]).reshape(1, -1)
-me -= _mean
-me /= _std
-print(me)
-print(predictor.predict_proba(me)[0][1])
-
-# Predict abue
-print("\nPredicting abue:")
-abue = array([1.,0.,84.,0.,1.,0.,0.,0.,0.,0.,0.,0.,0.,0.]).reshape(1, -1)
-abue -= _mean
-abue /= _std
-print(predictor.predict_proba(abue)[0][1])
-# Predict mama
-print("\nPredicting mama:")
-mama = array([1.,0.,61.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.]).reshape(1, -1)
-mama -= _mean
-mama /= _std
-print(predictor.predict_proba(mama)[0][1])
-# Predict eva
-print("\nPredicting eva:")
-eva = array([1.,0.,27.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.]).reshape(1, -1)
-eva -= _mean
-eva /= _std
-print(eva)
-print(predictor.predict_proba(eva)[0][1])
-
-# Predict bad
-print("\nPredicting bad:")
-bad = array([1.,1.,50.,1.,1.,1.,1.,1.,1.,1.,1.,1.,1.,1.]).reshape(1, -1)
-bad -= _mean
-bad /= _std
-print(bad)
-print(predictor.predict_proba(bad)[0][1])
 
 print("If probability of death > {}, then counted as will die".format(thresh))
